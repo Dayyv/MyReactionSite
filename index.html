@@ -14,24 +14,20 @@
 </head>
 <body>
 <div class="navbar">
-    <ul>
-        <li>
-            <img src="assets/icon.png" alt="sigma" height="70" width="70">
-        </li>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="database.html">Database</a>
-        </li>
-        <li>
-            <a href="about.html">About</a>
-        </li>
-    </ul>
+
+            <img src="assets/icon.png" alt="sigma" height="70px" width="70px" class="navimg">
+
+            <a href="index.html" class="nav">Home</a>
+
+            <a href="database.html" class="nav">Database</a>
+
+            <a href="about.html" class="nav">About</a>
+    <div id="search-bar" class="nav">
+        <input type="text" id="search-input" placeholder="Search for images..." oninput="searchImages()">
+    </div>
+
 </div>
-<div id="search-bar">
-    <input type="text" id="search-input" placeholder="Search for images..." oninput="searchImages()">
-</div>
+
 
 <div id="image-container"></div>
 
@@ -47,7 +43,7 @@
         },
         'win': {
             images: ['images/win/Win1.png', 'images/win/Win2.jpg','images/win/Win3.png','images/win/Win4.png',],
-            tags: ['confiscado', 'victory', 'win']
+            tags: ['victory', 'win']
         },
         'agenda':{
             images: ['images/Agenda/agenda1.png','images/Agenda/agenda2.jpg','images/Agenda/agenda3.webp'],
@@ -56,6 +52,70 @@
         'oder':{
             images: ['images/Oder/Oder1.png','images/Oder/Oder2.png','images/Oder/Oder3.webp'],
             tags: ['maybe','moze','oder']
+        },
+        'confiscado':{
+            images: ['images/Confiscado/confiscado1.png','images/Confiscado/confiscado2.png','images/Confiscado/confiscado3.JPG','images/Confiscado/confiscado4.JPG','images/Confiscado/confiscado5.PNG','images/Confiscado/confiscado6.jpg','images/Confiscado/confiscado7.jpg','images/Confiscado/confiscado8.jpg','images/Confiscado/confiscado9.PNG',],
+            tags: ['confiscate', 'confiscado', 'moderators']
+        },
+        'cooking':{
+            images: ['images/cooking/cooking1.jpg','images/cooking/cooking2.jpg'],
+            tags: ['let him cook', 'cook', 'cooking']
+        },
+        'EmuReactions':{
+            images: ['images/EmuReactions/EmuReaction1.png','images/EmuReactions/EmuReaction2.png','images/EmuReactions/EmuReaction3.png','images/EmuReactions/EmuReaction4.png','images/EmuReactions/EmuReaction5.png','images/EmuReactions/EmuReaction6.png','images/EmuReactions/EmuReaction7.png','images/EmuReactions/EmuReaction8.png'],
+            tags: ['emu']
+        },
+        'Fak Yu':{
+            images: ['images/FakYu/FakYu1.png'],
+            tags: ['fuck you']
+        },
+        'Falsch':{
+            images:['images/Falsch/False1.png', 'images/Falsch/False2.webp'],
+            tags:['Falsch', 'False']
+        },
+        'Forgor':{
+            images:['images/forgor/Forgor1.PNG'],
+            tags:['forgor','dementia','wawrzyn']
+        },
+        'Fuckable':{
+            images:['images/FUCKABLE/Fuckable1.JPG','images/FUCKABLE/Fuckable2.JPG','images/FUCKABLE/Fuckable3.PNG','images/FUCKABLE/Fuckable4.PNG','images/FUCKABLE/Fuckable5.JPG','images/FUCKABLE/Fuckable6.JPG','images/FUCKABLE/Fuckable7.JPG','images/FUCKABLE/Fuckable8.JPG','images/FUCKABLE/Fuckable9.PNG','images/FUCKABLE/Fuckable10.png'],
+            tags:['would','fuckable','cum']
+        },
+        'Fucking Retarded?':{
+            images:['images/fucking retarded/FuckingRet1.jpg','images/fucking retarded/FuckingRet2.jpg'],
+            tags:['fucking retarded?','dumbass']
+        },
+        'how hungry':{
+            images:['images/how hungry/HH1.JPG'],
+            tags:['how hungry']
+        },
+        'ITooAmInThisFolder':{
+            images:['images/ITooAmInThisFolder/ImTooHere.png'],
+            tags:['I too am here', 'Wilson']
+        },
+        'kms':{
+            images:['images/kms/kms1.JPG'],
+            tags:['kms','kill my self','kys']
+        },
+        'literalnie':{
+            images:['images/literalnie/literally1.jpg'],
+            tags:['literally']
+        },
+        'ok':{
+           images:['images/ok/ok1.jpg'],
+           tags:['ok']
+        },
+        'peak':{
+            images:['images/Peak/Peak1.jpg','images/Peak/Peak2.jpg', 'images/Peak/Peak3.jpg','images/Peak/Peak4.jpg'],
+            tags:['peak','absolute cinema','cinema']
+        },
+        'what':{
+            images:['images/Que/Que1.PNG','images/Que/Que2.png'],
+            tags:['what','que','what the sigma','huh']
+        },
+        'richtig':{
+            images:['images/Richtig/Richtig1.png','images/Richtig/Richtig2.PNG','images/Richtig/Richtig3.png','images/Richtig/Richtig4.png','images/Richtig/Richtig5.webp'],
+            tags:['true','richtig']
         }
     };
 

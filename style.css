@@ -9,6 +9,29 @@
 .navbar{
     text-decoration: none;
     text-align: center;
+    background-color: #232323;
+    width: 100%;
+    height: 70px;
+
+}
+.nav{
+    float: left;
+    background-color: #232323;
+
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 15px;
+    margin-top: 9px;
+    margin-bottom: 25px;
+    padding: 15px;
+
+}
+.nav:hover{
+    background-color: #535353;
+    transition: 0.5s;
+}
+.navimg{
+    float: left;
 }
 .navbar a{
     text-decoration: none;
@@ -18,4 +41,10 @@
     margin: 5px;
     border: black solid 5px;
     border-radius: 5px;
+}
+#image-container{
+    float: left;
+}
+#search-input{
+    width: 100%;
 }
