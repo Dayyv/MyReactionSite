@@ -18,11 +18,8 @@
     float: left;
     background-color: #232323;
 
-    margin-right: 25px;
-    margin-left: 25px;
     border-radius: 15px;
-    margin-top: 9px;
-    margin-bottom: 25px;
+    margin: 9px 25px 25px;
     padding: 15px;
 
 }
