@@ -37,21 +37,25 @@
 
 <script>
     const folders = {
+        'default': {
+            images: ['images/Default/default.png'],
+            tags: [' ']
+        },
+        'live reaction': {
+            images: ['images/LIVE REACTION/LiveReaction1.png'],
+            tags: ['live', 'reaction']
+        },
         'win': {
-            images: ['images/win/Win1.png', 'images/win/Win2.png'],
+            images: ['images/win/Win1.png', 'images/win/Win2.jpg','images/win/Win3.png','images/win/Win4.png',],
             tags: ['confiscado', 'victory', 'win']
         },
         'agenda':{
             images: ['images/Agenda/agenda1.png','images/Agenda/agenda2.jpg','images/Agenda/agenda3.webp'],
             tags: ['mantaining', 'agenda']
         },
-        'sunset': {
-            images: ['images/sunset/Sunset1.jpg', 'images/sunset/Sunset2.jpg'],
-            tags: ['evening', 'sky', 'beautiful', 'sunset']
-        },
-        'mountain': {
-            images: ['images/mountain/Mountain1.png', 'images/mountain/Mountain2.png'],
-            tags: ['nature', 'peak', 'adventure', 'mountain']
+        'oder':{
+            images: ['images/Oder/Oder1.png','images/Oder/Oder2.png','images/Oder/Oder3.webp'],
+            tags: ['maybe','moze','oder']
         }
     };
 
@@ -76,7 +80,7 @@
         matchedImages.forEach(image => {
             const imgElement = document.createElement('div');
             imgElement.classList.add('image-item');
-            imgElement.innerHTML = `<img src="${image}" alt="Image" height="10%" width="10%">`;
+            imgElement.innerHTML = `<a href="${image}" target="_blank"><img src="${image}" alt="Image" height="10%" width="10%" class="reaction"></a>`;
             imageContainer.appendChild(imgElement);
         });
     }

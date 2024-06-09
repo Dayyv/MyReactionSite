@@ -3,10 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Mono", serif;
-
+    background-color: #353536;
+    color: white;
 }
 .navbar{
     text-decoration: none;
     text-align: center;
-
+}
+.navbar a{
+    text-decoration: none;
+}
+.reaction{
+    float: left;
+    margin: 5px;
+    border: black solid 5px;
+    border-radius: 5px;
 }
