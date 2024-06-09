@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>MyReaction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+    <ul>
+        <li>
+            <img src="assets/icon.png" alt="sigma" height="70" width="70">
+        </li>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="database.html">Database</a>
+        </li>
+        <li>
+            <a href="about.html">About</a>
+        </li>
+    </ul>
+</div>
+<div id="search-bar">
+    <input type="text" id="search-input" placeholder="Search for images..." oninput="searchImages()">
+</div>
+
+<div id="image-container"></div>
+
+<script>
+    const folders = {
+        'win': {
+            images: ['images/win/Win1.png', 'images/win/Win2.png'],
+            tags: ['confiscado', 'victory', 'win']
+        },
+        'agenda':{
+            images: ['images/Agenda/agenda1.png','images/Agenda/agenda2.jpg','images/Agenda/agenda3.webp'],
+            tags: ['mantaining', 'agenda']
+        },
+        'sunset': {
+            images: ['images/sunset/Sunset1.jpg', 'images/sunset/Sunset2.jpg'],
+            tags: ['evening', 'sky', 'beautiful', 'sunset']
+        },
+        'mountain': {
+            images: ['images/mountain/Mountain1.png', 'images/mountain/Mountain2.png'],
+            tags: ['nature', 'peak', 'adventure', 'mountain']
+        }
+    };
+
+    function searchImages() {
+        const query = document.getElementById('search-input').value.toLowerCase();
+        const words = query.split(/\s+/);
+        let matchedImages = [];
+
+        for (const word of words) {
+            for (const folder in folders) {
+                if (folder.includes(word) || folders[folder].tags.some(tag => tag.includes(word))) {
+                    matchedImages = folders[folder].images;
+                    break;
+                }
+            }
+            if (matchedImages.length > 0) break;
+        }
+
+        const imageContainer = document.getElementById('image-container');
+        imageContainer.innerHTML = '';
+
+        matchedImages.forEach(image => {
+            const imgElement = document.createElement('div');
+            imgElement.classList.add('image-item');
+            imgElement.innerHTML = `<img src="${image}" alt="Image" height="10%" width="10%">`;
+            imageContainer.appendChild(imgElement);
+        });
+    }
+
+    // Initial display of no images
+    document.addEventListener('DOMContentLoaded', (event) => {
+        searchImages();
+    });
+</script>
+
+</body>
+</html>
