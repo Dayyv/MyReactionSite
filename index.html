@@ -94,7 +94,7 @@
             tags:['I too am here', 'Wilson']
         },
         'kms':{
-            images:['images/kms/kms1.JPG'],
+            images:['images/kms/kms1.JPG','images/kms/kms2.png'],
             tags:['kms','kill my self','kys']
         },
         'literalnie':{
@@ -151,7 +151,7 @@
         matchedImages.forEach(image => {
             const imgElement = document.createElement('div');
             imgElement.classList.add('image-item');
-            imgElement.innerHTML = `<a href="${image}" target="_blank"><img src="${image}" alt="Image" height="10%" width="10%" class="reaction"></a>`;
+            imgElement.innerHTML = `<a href="${image}" target="_blank"><img src="${image}" alt="Image" height="20%" width="20%" class="reaction"></a>`;
             imageContainer.appendChild(imgElement);
         });
     }
