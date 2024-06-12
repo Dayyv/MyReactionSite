@@ -26,3 +26,5 @@ Currently supported searches:
 * wtf stuff
 * Nah, i'd win
 * With this treasure, i summon...
+
+(Thumbnail credit: https://youtu.be/fEswnMrMXUM?si=AZb-p6ZhFr0GHv7j)
