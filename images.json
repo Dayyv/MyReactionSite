@@ -92,6 +92,11 @@
     "tags": ["sigma", "i feel so sigma"]
   },
   "With this treasure": {
-    "images": ["images/With this i summon/wtis1.webp", "images/With this i summon/wtis2.jpg"]
+    "images": ["images/With this i summon/wtis1.webp", "images/With this i summon/wtis2.jpg"],
+    "tags": ["with this treasure i summon", "bumgumi"]
+  },
+  "Fnaf": {
+    "images": ["images/Fnaf/Fnaf (1).webp","images/Fnaf/Fnaf (2).webp","images/Fnaf/Fnaf (3).webp","images/Fnaf/Fnaf (4).webp","images/Fnaf/Fnaf (5).webp","images/Fnaf/Fnaf (6).webp","images/Fnaf/Fnaf (7).webp","images/Fnaf/Fnaf (8).webp"],
+    "tags": ["fnaf"]
   }
 }
