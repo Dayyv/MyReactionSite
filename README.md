@@ -4,7 +4,7 @@
 
 Currently supported searches:
 * Agenda
-* Conficado ('mods, crush his balls'-esque stuff)
+* Confiscado ('mods, crush his balls'-esque stuff)
 * Cooking
 * Emu Otori Reactions (Project Sekai)
 * Fuck You
