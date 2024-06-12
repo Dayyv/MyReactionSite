@@ -28,4 +28,4 @@ Currently supported searches:
 * With this treasure, i summon...
 * Fnaf memes
 
-(Thumbnail credit: https://youtu.be/fEswnMrMXUM?si=AZb-p6ZhFr0GHv7j)
+(Icon credit: https://youtu.be/fEswnMrMXUM?si=AZb-p6ZhFr0GHv7j)
