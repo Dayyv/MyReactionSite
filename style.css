@@ -84,3 +84,12 @@ a{
     border-radius: 15px;
     color: white;
 }
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323;
+    color: white;
+    text-align: center;
+
+}

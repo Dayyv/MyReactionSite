@@ -1,10 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>MyReaction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a89d9199df.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="navbar">
+    <img src="assets/icon.png" alt="sigma" height="70px" width="70px" class="navimg">
+    <a href="index.html" class="nav">Search</a>
+    <a href="allimg.html" class="nav">All Images</a>
+    <a href="about.html" class="nav">About</a>
 
+
+
+</div>
+<div class="empty"></div>
+<div id="image-container"></div>
+<script>
+    let folders = {};
+
+    document.addEventListener('DOMContentLoaded', async (event) => {
+        await fetchImageData();
+        displayAllImages();  // Display all images when the page loads
+    });
+
+    async function fetchImageData() {
+        try {
+            const response = await fetch('images.json');
+            if (!response.ok) {
+                throw new Error('Network response was not ok' + response.statusText);
+            }
+            folders = await response.json();
+        } catch (error) {
+            console.error('Error fetching the image data:', error);
+        }
+    }
+    function displayAllImages() {
+        const imageContainer = document.getElementById('image-container');
+        imageContainer.innerHTML = '';
+
+        for (const folder in folders) {
+            folders[folder].images.forEach(image => {
+                const imgElement = document.createElement('div');
+                imgElement.classList.add('image-item');
+                imgElement.innerHTML = `<a href="${image}" target="_blank"><img src="${image}" alt="Image" height="20%" width="20%" class="reaction"></a>`;
+                imageContainer.appendChild(imgElement);
+            });
+        }
+    }
+
+</script>
+
+    <div class="footer">
+        <p>2024 Dayvid --- <a href="https://github.com/Expiczek/MyReactionSite" target="_blank"><i class="fa-brands fa-github"> Github</i></a></p>
+    </div>
 </body>
 </html>

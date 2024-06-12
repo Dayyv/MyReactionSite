@@ -1,6 +1,6 @@
 {
   "default": {
-    "images": ["images/Default/default.png"],
+    "images": ["images/Default/default.webp"],
     "tags": [" "]
   },
   "live reaction": {
@@ -36,7 +36,7 @@
     "tags": ["fuck you"]
   },
   "Falsch": {
-    "images": ["images/Falsch/False1.png", "images/Falsch/False2.webp"],
+    "images": ["images/Falsch/False1.jpg", "images/Falsch/False2.webp"],
     "tags": ["Falsch", "False"]
   },
   "Forgor": {
@@ -56,7 +56,7 @@
     "tags": ["how hungry"]
   },
   "ITooAmInThisFolder": {
-    "images": ["images/ITooAmInThisFolder/ImTooHere.png"],
+    "images": ["images/ITooAmInThisFolder/ImTooHere1.png"],
     "tags": ["I too am here", "Wilson"]
   },
   "kms": {
@@ -99,4 +99,5 @@
     "images": ["images/Fnaf/Fnaf (1).webp","images/Fnaf/Fnaf (2).webp","images/Fnaf/Fnaf (3).webp","images/Fnaf/Fnaf (4).webp","images/Fnaf/Fnaf (5).webp","images/Fnaf/Fnaf (6).webp","images/Fnaf/Fnaf (7).webp","images/Fnaf/Fnaf (8).webp"],
     "tags": ["fnaf"]
   }
+
 }
