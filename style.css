@@ -80,6 +80,7 @@ h1{
 }
 #image-container{
     float: left;
+    position: relative;
     width: 100%;
 }
 #search-input{
@@ -100,7 +101,7 @@ h1{
 .default{
     float: left;
     padding: 100px;
-    margin: 20px;
+    margin: 4.5%;
     text-align: center;
     color: white;
     width: 80%;
@@ -155,7 +156,7 @@ h1{
 
     .default {
         padding: 20px;
-        margin: 20px auto;
+        margin: 2.5% ;
         width: 90%;
         height: auto;
     }

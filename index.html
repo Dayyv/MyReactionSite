@@ -85,10 +85,10 @@
 
         const defaultDiv = document.createElement('div');
         defaultDiv.classList.add('default');
-        defaultDiv.innerHTML = `<div class="default-left"> <h1>What are we looking for?</h1>
-<img src="assets/default.png" alt="?"></div>
+        defaultDiv.innerHTML = `<div class="default-left"> <h1>What are we looking for?</h1><div class="default-left-img">
+<img src="assets/default.png" alt="?" height="40%" width="40%"></div></div>
 <div class="default-right">
-<p>No search query provided. Please enter a search term to find images.</p>
+<p><h2>Begin typing in the search box to look up epic images.</h2> </p>
 </div>`;
         imageContainer.appendChild(defaultDiv);
     }
