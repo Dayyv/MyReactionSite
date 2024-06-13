@@ -12,25 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a89d9199df.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
 <div class="navbar">
 
-    <img src="assets/icon.png" alt="sigma" height="70px" width="70px" class="navimg">
     <a href="index.html" class="nav">Search</a>
     <a href="allimg.html" class="nav">All Images</a>
     <a href="about.html" class="nav">About</a>
-    <div id="search-bar" class="nav">
-        <input type="text" id="search-input" placeholder="Search for images..." oninput="searchImages()">
-    </div>
-
-</div>
-<div class="empty">
 
 </div>
 
+<div class="empty"></div>
+<div id="search-bar" class="nav">
+    <label for="search-input"></label><input type="text" id="search-input" placeholder="Search for images..." oninput="searchImages()">
+</div>
 <div id="image-container"></div>
 
 <script>
@@ -58,6 +54,11 @@
         const words = query.split(/\s+/);
         let matchedImages = [];
 
+        if (query.trim() === "") {
+            displayDefaultDiv();
+            return;
+        }
+
         for (const word of words) {
             for (const folder in folders) {
                 if (folder.includes(word) || folders[folder].tags.some(tag => tag.includes(word))) {
@@ -77,9 +78,26 @@
             imageContainer.appendChild(imgElement);
         });
     }
+
+    function displayDefaultDiv() {
+        const imageContainer = document.getElementById('image-container');
+        imageContainer.innerHTML = '';
+
+        const defaultDiv = document.createElement('div');
+        defaultDiv.classList.add('default');
+        defaultDiv.innerHTML = `<div class="default-left"> <h1>What are we looking for?</h1>
+<img src="assets/default.png" alt="?"></div>
+<div class="default-right">
+<p>No search query provided. Please enter a search term to find images.</p>
+</div>`;
+        imageContainer.appendChild(defaultDiv);
+    }
 </script>
+
 <div class="footer">
-    <p>2024 Dayvid --- <a href="https://github.com/Expiczek/MyReactionSite" target="_blank"><i class="fa-brands fa-github"> Github</i></a></p>
+    <p>2024 Dayvv --- <a href="https://github.com/Expiczek/MyReactionSite" target="_blank"><i class="fa-brands fa-github"> Github</i></a></p>
 </div>
+
+
 </body>
 </html>

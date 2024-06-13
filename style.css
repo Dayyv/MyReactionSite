@@ -14,6 +14,10 @@ body{
     height: 70px;
     color: white;
     position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .empty{
     height: 70px;
@@ -30,7 +34,7 @@ a{
     border: #303030 solid 2px;
     border-radius: 15px;
     height: 200px;
-    padding: 20px;
+    padding: 30px;
     margin: 10px 10px 100px;
 }
 .desc{
@@ -43,20 +47,19 @@ a{
 .contact{
     float: left;
 }
- h1{
-     margin-right: 10px;
-     text-align: left;
+h1{
+    margin-right: 10px;
+    text-align: left;
     float: left;
 }
 
 .nav{
-    float: left;
     background-color: #232323;
     border-radius: 15px;
-    margin: 9px 25px 25px;
+    margin: 9px 15px;
     padding: 15px;
     color: white;
-
+    text-align: center;
 }
 .nav:hover{
     background-color: #535353;
@@ -64,6 +67,7 @@ a{
 }
 .navimg{
     float: left;
+    margin-right: 10px;
 }
 .navbar a{
     text-decoration: none;
@@ -76,6 +80,7 @@ a{
 }
 #image-container{
     float: left;
+    width: 100%;
 }
 #search-input{
     width: 100%;
@@ -91,5 +96,98 @@ a{
     background-color: #232323;
     color: white;
     text-align: center;
+}
+.default{
+    float: left;
+    padding: 100px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    background-color: #232323;
+    border-radius: 15px;
+    height: 170px;
+}
+.default-left{
+    float: left;
+}
+.default-right{
+    float: right;
+}
+.empty2{
+    height: 53px;
+}
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    .empty{
+        height: 153px;
+    }
+
+    .nav {
+        margin: 5px 0;
+    }
+
+    .navimg {
+        margin: 0 auto 10px;
+    }
+
+    #search-input {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .desc, .author, .contact {
+        width: 80%;
+        height: auto;
+        float: none;
+        margin: 10px auto 50px;
+    }
+
+    .reaction {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .default {
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .default-left, .default-right {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+.empty2{
+    height: 53px;
+
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 10px;
+    }
+    .empty{
+        height: 153px;
+    }
+
+    .reaction {
+        width: 100%;
+    }
+
+    .default {
+        padding: 10px;
+    }
+    .empty2{
+        height: 53px;
+
+    }
 }

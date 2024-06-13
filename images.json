@@ -29,7 +29,7 @@
   },
   "EmuReactions": {
     "images": ["images/EmuReactions/EmuReaction1.png", "images/EmuReactions/EmuReaction2.png", "images/EmuReactions/EmuReaction3.png", "images/EmuReactions/EmuReaction4.png", "images/EmuReactions/EmuReaction5.png", "images/EmuReactions/EmuReaction6.png", "images/EmuReactions/EmuReaction7.png", "images/EmuReactions/EmuReaction8.png"],
-    "tags": ["emu"]
+    "tags": ["emu", "project sekai"]
   },
   "Fak Yu": {
     "images": ["images/FakYu/FakYu1.png"],
