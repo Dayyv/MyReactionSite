@@ -85,11 +85,23 @@ h1{
     margin-bottom: 53px;
 }
 #search-input{
-    width: 100%;
-    background-color: #232323;
+    width: 30%;
+    background-color: #636262;
     border: #2c2c2c solid 2px;
     border-radius: 15px;
-    color: white;
+    
+    text-align: center;
+    padding: 50px;
+    margin-top: 10px;
+    color: black;
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+    
+}
+::placeholder{
+    color: black;
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
 }
 .footer{
     position: fixed;

@@ -77,7 +77,7 @@
   },
   "what": {
     "images": ["images/Que/Que1.PNG", "images/Que/Que2.png"],
-    "tags": ["what", "que", "what the sigma", "huh"]
+    "tags": ["what", "que",  "huh"]
   },
   "richtig": {
     "images": ["images/Richtig/Richtig1.png", "images/Richtig/Richtig2.PNG", "images/Richtig/Richtig3.png", "images/Richtig/Richtig4.png", "images/Richtig/Richtig5.webp"],
@@ -88,7 +88,7 @@
     "tags": ["breached containment", "run"]
   },
   "sigma": {
-    "images": ["images/Sigma/sigma1.png", "images/Sigma/sigma2.png", "images/Sigma/sigma3.png", "images/Sigma/sigma4.JPG", "images/Sigma/sigma5.png", "images/Sigma/sigma6.PNG", "images/Sigma/sigma7.png"],
+    "images": ["images/Sigma/sigma1.png", "images/Sigma/sigma2.png", "images/Sigma/sigma3.png", "images/Sigma/sigma4.JPG", "images/Sigma/sigma5.png", "images/Sigma/sigma6.PNG", "images/Sigma/sigma7.png","images/Sigma/sigma8.png"],
     "tags": ["sigma", "i feel so sigma"]
   },
   "With this treasure": {
