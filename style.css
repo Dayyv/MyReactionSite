@@ -82,6 +82,7 @@ h1{
     float: left;
     position: relative;
     width: 100%;
+    margin-bottom: 53px;
 }
 #search-input{
     width: 100%;
@@ -97,6 +98,7 @@ h1{
     background-color: #232323;
     color: white;
     text-align: center;
+    
 }
 .default{
     float: left;
