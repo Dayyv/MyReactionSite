@@ -8,7 +8,7 @@
     "tags": ["live", "reaction"]
   },
   "win": {
-    "images": ["images/win/win1.png", "images/win/win2.jpg", "images/win/win3.png", "images/win/win4.png"],
+    "images": ["images/win/win1.png", "images/win/win2.jpg", "images/win/win3.png", "images/win/win4.png", "images/win/win5.jpg"],
     "tags": ["victory", "win"]
   },
   "agenda": {
