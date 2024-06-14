@@ -44,7 +44,7 @@
     "tags": ["forgor", "dementia", "wawrzyn"]
   },
   "Fuckable": {
-    "images": ["images/FUCKABLE/Fuckable1.JPG", "images/FUCKABLE/Fuckable2.JPG", "images/FUCKABLE/Fuckable3.PNG", "images/FUCKABLE/Fuckable4.PNG", "images/FUCKABLE/Fuckable5.JPG", "images/FUCKABLE/Fuckable6.JPG", "images/FUCKABLE/Fuckable7.JPG", "images/FUCKABLE/Fuckable8.JPG", "images/FUCKABLE/Fuckable9.PNG", "images/FUCKABLE/Fuckable10.png"],
+    "images": ["images/FUCKABLE/Fuckable1.JPG", "images/FUCKABLE/Fuckable2.JPG", "images/FUCKABLE/Fuckable3.PNG", "images/FUCKABLE/Fuckable4.PNG", "images/FUCKABLE/Fuckable5.JPG", "images/FUCKABLE/Fuckable6.JPG", "images/FUCKABLE/Fuckable7.JPG", "images/FUCKABLE/Fuckable8.JPG", "images/FUCKABLE/Fuckable9.PNG", "images/FUCKABLE/Fuckable10.png", "images/FUCKABLE/Fuckable11.png"],
     "tags": ["would", "fuckable", "cum", "gay","femboy"]
   },
   "Fucking Retarded?": {
@@ -80,7 +80,7 @@
     "tags": ["what", "que",  "huh"]
   },
   "richtig": {
-    "images": ["images/Richtig/Richtig1.png", "images/Richtig/Richtig2.PNG", "images/Richtig/Richtig3.png", "images/Richtig/Richtig4.png", "images/Richtig/Richtig5.webp"],
+    "images": ["images/Richtig/Richtig1.png", "images/Richtig/Richtig2.PNG", "images/Richtig/Richtig3.png", "images/Richtig/Richtig4.png", "images/Richtig/Richtig5.webp", "images/Richtig/Richtig6.webp","images/Richtig/Richtig7.webp"],
     "tags": ["true", "richtig"]
   },
   "run": {
@@ -88,7 +88,7 @@
     "tags": ["breached containment", "run"]
   },
   "sigma": {
-    "images": ["images/Sigma/sigma1.png", "images/Sigma/sigma2.png", "images/Sigma/sigma3.png", "images/Sigma/sigma4.JPG", "images/Sigma/sigma5.png", "images/Sigma/sigma6.PNG", "images/Sigma/sigma7.png","images/Sigma/sigma8.png"],
+    "images": ["images/Sigma/sigma1.PNG", "images/Sigma/sigma2.png", "images/Sigma/sigma3.PNG", "images/Sigma/sigma4.JPG", "images/Sigma/sigma5.png", "images/Sigma/sigma6.PNG", "images/Sigma/sigma7.png","images/Sigma/sigma8.png"],
     "tags": ["sigma", "i feel so sigma"]
   },
   "With this treasure": {
@@ -98,6 +98,14 @@
   "Fnaf": {
     "images": ["images/Fnaf/Fnaf (1).webp","images/Fnaf/Fnaf (2).webp","images/Fnaf/Fnaf (3).webp","images/Fnaf/Fnaf (4).webp","images/Fnaf/Fnaf (5).webp","images/Fnaf/Fnaf (6).webp","images/Fnaf/Fnaf (7).webp","images/Fnaf/Fnaf (8).webp"],
     "tags": ["fnaf"]
+  },
+  "konfaposting":{
+    "images":["images/konfederacjaposting/konf1.jpg", "images/konfederacjaposting/konf2.png", "images/konfederacjaposting/konf3.jpg"],
+    "tags":["konfederacja", "braun", "mentzen", "bosak"]
+  },
+  "kekw":{
+    "images":["images/kekw/kekw1.webp"],
+    "tags":["kekw","xd","lmao"]
   }
 
 }
