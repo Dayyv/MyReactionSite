@@ -28,6 +28,8 @@ Currently supported searches:
 * Nah, i'd win
 * With this treasure, i summon...
 * Fnaf memes
+* konfederacjaposting
+* kekw
 
 ---
 
